@@ -1,0 +1,15 @@
+/Users/mac/Documents/Testing/HomeworkC/ Ex_2/obj/Debug/net6.0/Ex_2.csproj.AssemblyReference.cache
+/Users/mac/Documents/Testing/HomeworkC/ Ex_2/obj/Debug/net6.0/Ex_2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mac/Documents/Testing/HomeworkC/ Ex_2/obj/Debug/net6.0/Ex_2.AssemblyInfoInputs.cache
+/Users/mac/Documents/Testing/HomeworkC/ Ex_2/obj/Debug/net6.0/Ex_2.AssemblyInfo.cs
+/Users/mac/Documents/Testing/HomeworkC/ Ex_2/obj/Debug/net6.0/Ex_2.csproj.CoreCompileInputs.cache
+/Users/mac/Documents/Testing/HomeworkC/ Ex_2/bin/Debug/net6.0/Ex_2
+/Users/mac/Documents/Testing/HomeworkC/ Ex_2/bin/Debug/net6.0/Ex_2.deps.json
+/Users/mac/Documents/Testing/HomeworkC/ Ex_2/bin/Debug/net6.0/Ex_2.runtimeconfig.json
+/Users/mac/Documents/Testing/HomeworkC/ Ex_2/bin/Debug/net6.0/Ex_2.dll
+/Users/mac/Documents/Testing/HomeworkC/ Ex_2/bin/Debug/net6.0/Ex_2.pdb
+/Users/mac/Documents/Testing/HomeworkC/ Ex_2/obj/Debug/net6.0/Ex_2.dll
+/Users/mac/Documents/Testing/HomeworkC/ Ex_2/obj/Debug/net6.0/refint/Ex_2.dll
+/Users/mac/Documents/Testing/HomeworkC/ Ex_2/obj/Debug/net6.0/Ex_2.pdb
+/Users/mac/Documents/Testing/HomeworkC/ Ex_2/obj/Debug/net6.0/Ex_2.genruntimeconfig.cache
+/Users/mac/Documents/Testing/HomeworkC/ Ex_2/obj/Debug/net6.0/ref/Ex_2.dll
