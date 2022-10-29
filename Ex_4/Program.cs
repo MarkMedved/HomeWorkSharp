@@ -11,22 +11,22 @@ int b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Напиши число с");
 int c = Convert.ToInt32(Console.ReadLine());
 int max = a;
-if (max>b)
-    {
+if (max > b)
+{
     max = a;
-    }
-    else
-    {
+}
+else
+{
     max = b;
-    }
+}
 if (max > c)
-    {
+{
     Console.Write("max= ");
     Console.WriteLine(max);
-    }
+}
 else
-    {
+{
     max = c;
     Console.Write("max= ");
     Console.WriteLine(max);
-    }
+}

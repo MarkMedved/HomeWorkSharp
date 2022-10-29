@@ -8,13 +8,13 @@ int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Напиши перевенную b");
 int b = Convert.ToInt32(Console.ReadLine());
 int max = a;
-if(max > b) 
+if (max > b)
 {
     max = a;
 }
 else
 {
-    max = b; 
+    max = b;
 }
 Console.Write("max = ");
 Console.WriteLine(max);
