@@ -19,14 +19,9 @@ else
 {
     max = b;
 }
-if (max > c)
+if (max < c)
 {
+     max = c;
+}
     Console.Write("max= ");
     Console.WriteLine(max);
-}
-else
-{
-    max = c;
-    Console.Write("max= ");
-    Console.WriteLine(max);
-}
