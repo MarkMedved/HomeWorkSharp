@@ -1,6 +1,23 @@
 ﻿Console.Clear();
-Console.WriteLine("Введите трехзначное число");
-int num = Convert.IoInt32(Console.ReadLine());
-int x1 = num % 100;
-int x2 = x1 / 10;
-Console.WriteLine("Вторая строая цифра числа" + x2);
+int InputNum(string num)
+{
+    Console.WriteLine(num);
+    return Convert.ToInt32(Console.ReadLine());
+}
+
+int numIn = InputNum($"Введите день недели в виде цифры: ");
+if (numIn <= 7)
+{
+    if (numIn == 7 || numIn == 6)
+{
+    Console.WriteLine("Ура выходной!");
+}
+else
+{
+    Console.WriteLine("Рабочий день недели :(");
+}
+}
+else
+{
+    Console.WriteLine("Введите корректную цифру!");
+}
