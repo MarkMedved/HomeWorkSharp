@@ -3,12 +3,12 @@
 //N = 3, получаем массив [6, 1, 33]
 
 Console.Clear();
-void CreatArray(int[] size)
+void FillArray(int[] collection)
 {
-    int length = size.Length;
+    int length = collection.Length;
     for(int i = 0; i < length; i++)
     {
-        size[i]= new Random().Next(1, 10);
+        collection[i]= new Random().Next(1, 10);
     }
 }
 void PrintArray(int[]col)
@@ -20,6 +20,6 @@ void PrintArray(int[]col)
     }
 }
 int[] array = new int[8];
-CreatArray(array);
+FillArray(array);
 PrintArray(array);
 Console.WriteLine();
