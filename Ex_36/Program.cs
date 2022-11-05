@@ -7,29 +7,26 @@ Console.Clear();
 
 void FillArray (int[] collection)
 {
-    int length = collection.Length;
-    for(int i = 0; i< length; i++)
+    for(int i = 0; i< collection.Length; i++)
     {
         collection[i]= new Random().Next(1, 100);
     }
 }
 void PrintArray (int[] col)
 {
-    int size = col.Length;
-    for(int position = 0; position < size; position++)
+    for(int position = 0; position < col.Length; position++)
     {
         Console.Write($"{col[position]} ");
     }
 }
 int SummaPositions (int [] array)
 {
-    int length = array.Length;
     int summa = 0;
-    for( int i =0; i<length; i++)
+    for( int i =0; i<array.Length; i++)
     {
-        if(array[i]%2!=0)
+        if(i%2!=0)
         {
-            summa = summa + array[i];
+            summa = summa + i;
         }
     }
     return summa;

@@ -3,29 +3,26 @@
 
 Console.Clear();
 
-void FillArray(int[] collection)
+void FillArray(double[] collection)
 {
-    int array = collection.Length;
-    for (int i = 0; i < array; i++)
+    for (int i = 0; i < collection.Length; i++)
     {
         collection[i] = new Random().Next(1, 100);
     }
 }
 
-void PrintArray(int[] col)
+void PrintArray(double[] col)
 {
-    int size = col.Length;
-    for (int position = 0; position < size; position++)
+    for (int position = 0; position < col.Length; position++)
     {
         Console.Write($"{col[position]} ");
     }
 }
 
-int MaxArray(int[] array)
+double MaxArray(double[] array)
 {
-    int collection = array.Length;
-    int Max = array[0];
-    for (int i = 1; i < collection; i++)
+    double Max = array[0];
+    for (int i = 1; i < array.Length; i++)
     {
         if (array[i] > Max)
         {
@@ -35,11 +32,10 @@ int MaxArray(int[] array)
     return Max;
 }
 
-int MinArray(int[] array)
+double MinArray(double[] array)
 {
-    int collection = array.Length;
-    int Min = array[0];
-    for (int i = 1; i < collection; i++)
+    double Min = array[0];
+    for (int i = 1; i < array.Length; i++)
     {
         if (array[i] < Min)
         {
@@ -49,17 +45,17 @@ int MinArray(int[] array)
     return Min;
 }
 
-int Subs( int max, int min)
+double Subs( double max, double min)
 {
-    int Sub = 0;
+    double Sub = 0;
     Sub = max - min;
     return Sub;
 }
 
-int[] array = new int[7];
+double[] array = new double [7];
 FillArray(array);
 PrintArray(array);
-int max = MaxArray(array);
-int min = MinArray(array);
+double max = MaxArray(array);
+double min = MinArray(array);
 Console.WriteLine();
 Console.WriteLine(Subs(max, min));
