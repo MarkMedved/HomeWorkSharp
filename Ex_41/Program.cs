@@ -2,35 +2,43 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
-int[] GetArrayFromString(string stringArray)
+Console.Clear();
+int[] GetData(string text)
 {
-    string[] nums = stringArray.Split(" ", StringSplitOptions.RemoveEmptyEntries);
-    int[] result = new int[nums.Length];
-
-    for (int i = 0; i < nums.Length; i++)
+    Console.WriteLine(text);
+    string[] arg;
+    while (true)
     {
-        result[i] = int.Parse(nums[i]);
+        arg = Console.ReadLine().Split(new char[] { ' ', ',', '|' }, StringSplitOptions.RemoveEmptyEntries);
+        if (arg.Length > 0) break;
+    }
+    int size = arg.Length;
+    int[] result = new int[size];
+    for (int i = 0; i < size; i++)
+    {
+        int output;
+        if (int.TryParse(arg[i], out output))
+            result[i] = output;
+        else result[i] = -1;
     }
     return result;
 }
-
-int CountPositive(int[] array)
+int Sum(int[] array)
 {
-    int count = 0;
-    for(int i = 0; i<array.Length; i++)
+    int sum = 0;
+    for (int i = 0; i < array.Length; i++)
     {
-        if (array[i] > 0) count++;
+        if (array[i] > 0) 
+        sum++;
     }
-    return count;
+    return sum;
+}
+void PrintSumma(int sum)
+{
+    Console.WriteLine(sum);
 }
 
-Console.Clear();
-
-Console.WriteLine ("Введите числа через запятую: ");
-
-string input = Console.ReadLine()!;
-
-int[] numArray = GetArrayFromString(input);
-
-int count = CountPositive(numArray);
-Console.WriteLine($"Чисел больше нуля: {count}");
+int[] array = GetData("Введите числа через пробел– ");
+Console.WriteLine(String.Join("_", array));
+int sum = Sum(array);
+PrintSumma(sum);
