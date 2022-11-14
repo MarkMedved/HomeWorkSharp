@@ -3,19 +3,19 @@
 // M = 1; N = 15 -> 120
 // M = 4; N = 8. -> 30
 
-Console.Clear();
-int Akkerman(int m, int n)
+Console.WriteLine("Введите натуральное число от которого считать:");
+int M = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите натуральное число до которого считать:");
+int N = Convert.ToInt32(Console.ReadLine());
+
+int SumElem (int m, int n, int sum)
 {
-    if (m == 0) return n + 1;
-    else if (n == 0 && m != 0) return Akkerman(m - 1, 1);
-    else return Akkerman(m - 1, Akkerman(m, n - 1));
+    if (m > n) 
+    { 
+        return sum;
+    }
+    sum = sum + (m++);
+    return SumElem(m, n, sum);
 }
-Console.WriteLine("Введите натуральное число:");
-int m = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите натуральное число:");
-int n = Convert.ToInt32(Console.ReadLine());
-if (m >= 0 & n >= 0)
-{
-    Console.WriteLine($"Функция Аккермана для значений {m} и {n} равно: {Akkerman(m, n)}");
-}
-else Console.WriteLine("Числа должны быть неотрицательными");
+
+Console.WriteLine($"Сумма от натуральных чисел от {M} до {N} равна: {SumElem(M, N, 0)}");
